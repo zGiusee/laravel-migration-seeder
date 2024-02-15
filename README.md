@@ -15,3 +15,4 @@ Aggiungiamo un seeder per la classe Train usando FakerPHP.<br>
 Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.<br>
 Bonus:<br>
 Stilizzate il tutto con sass a vostra libera scelta.<br>
+
