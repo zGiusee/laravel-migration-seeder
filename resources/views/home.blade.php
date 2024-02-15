@@ -36,8 +36,8 @@
                     </p>
                     <p>Train identification code: {{ $train->train_code }}</p>
                     <p>Train carriages number: {{ $train->carriages_number }}</p>
-                    <p>In time: {{ $train->in_time }}</p>
-                    <p>state: {{ $train->deleted }}</p>
+                    <p>In time: {{ $train->in_time === 1 ? 'In time' : 'Delayed' }}</p>
+                    <p>state: {{ $train->deleted === 1 ? 'Trip cancelled ' : 'Normal' }}</p>
 
                 </div>
             @endforeach
@@ -59,8 +59,8 @@
                     </p>
                     <p>Train identification code: {{ $train->train_code }}</p>
                     <p>Train carriages number: {{ $train->carriages_number }}</p>
-                    <p>In time: {{ $train->in_time }}</p>
-                    <p>state: {{ $train->deleted }}</p>
+                    <p>In time: {{ $train->in_time === 1 ? 'In time' : 'Delayed' }}</p>
+                    <p>state: {{ $train->deleted === 1 ? 'Trip cancelled ' : 'Normal' }}</p>
 
                 </div>
             @endforeach
